@@ -1,0 +1,676 @@
+@import 'nib'
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
+
+*
+	box-sizing border-box
+.clearfix
+	clearfix()
+html,
+body
+	width 100%
+	height 100%         
+body
+	font-family 'Open Sans', sans-serif
+	color #243349
+	font-weight normal
+	font-size 16px
+	background #fff
+	position relative
+	max-width 1920px
+	min-width 320px
+	padding 0
+	margin 0
+	clearfix()
+*
+	box-sizing border-box
+a
+	text-decoration none
+img
+	max-width 100%
+h1
+	font-size 48px
+h1,h2,h3,h4,h5,h6
+	font-weight 300
+	text-align center
+	margin 0
+	font-size 48px
+	line-height 54px
+.wrap
+	width 1000px
+	padding-left 30px
+	padding-right 30px
+	margin 0 auto
+	clearfix()
+header
+	background url("../images/header-bg.png") no-repeat 50% 100% / 84%, #fff
+	position relative
+	z-index 2
+	.top-line
+		position fixed
+		top 0
+		left 0
+		background #fff
+		z-index 10
+		width 100%
+		.wrap
+			padding 30px 25px
+			.logo
+				float left
+				clearfix()
+				a
+					display block
+					float left
+					margin-right 30px
+				span
+					font-size 14px
+					color #7e8890
+					padding-top 10px
+					text-transform uppercase
+					display block
+					float left
+		nav
+			float right
+			padding-top 7px
+			ul
+				padding 0
+				margin 0
+				li
+					list-style-type none
+					display inline-block
+					position relative
+					&:not(:last-child)
+						margin-right 35px
+						&:after
+							display block
+							content ''
+							width 3px
+							height 3px
+							background #f03557
+							position absolute
+							top 10px
+							right -20px
+					a
+						font-size 14px
+						text-transform uppercase
+						color #243349
+						transition 0.3s
+						border-bottom 1px solid transparent
+						&:hover
+							color #000
+							border-bottom 1px solid #000
+	&>.wrap
+		padding 16vw 0 300px 0
+		background url("../images/main-bg.png") no-repeat bottom, #fff
+		h1
+			padding 0 120px 40px 120px
+		.main-btns
+			padding-left 50%
+			a
+				&:first-child
+					display inline-block
+					margin 0 auto
+					border-radius 3px
+					box-shadow 0 3px #b21d38
+					background #f03557
+					font-size 14px
+					transform translateX(-50%)
+					color #fff
+					padding 11px 36px
+					transition 0.3s
+					font-weight bold
+					text-transform uppercase
+					&:hover
+						background #b71331
+				&:last-child
+					color #3196dc
+					display inline-block
+					transform translateX(-50%)
+					background #fff
+					&:hover
+						text-decoration underline
+section.tech
+	.wrap
+		padding 95px 0 45px 0
+		.more-tech
+			display none
+	.tech-wrap
+		margin-top 35px
+		padding 0 25px
+		clearfix()
+		.tech-item
+			float left
+			width 10%
+			height 60px
+			position relative
+			margin-bottom 25px
+			transition 0.3s
+			&:hover
+				transform rotate(-45deg)				
+			img
+				display block
+				max-width 80%
+				position absolute
+				top 50%
+				left 50%
+				transform translate(-50%, -50%)
+	
+section.about
+	overflow hidden
+	background-attachment fixed
+	background url("../images/red-x.png") no-repeat 70% center / contain, url("../images/blue-bg.png") no-repeat center / cover
+	
+	.wrap
+		padding 100px 0 115px 0
+		.about-wrap
+			position relative
+			margin-bottom 105px
+			text-align center
+			.about-container
+				// display inline-block
+				text-align center
+				background #fff
+				position relative
+				border-radius 3px
+				box-shadow 0 20px 20px rgba(0,0,0,.2)
+				padding 60px 75px
+				margin 0 auto
+				max-width 630px
+				z-index 1
+				h2
+					margin 0 0 30px 0
+				p
+					color #747c83
+					&:not(:last-child)
+						margin-bottom 10px
+			img.about-photo1
+				position absolute
+				top -40px
+				right 40px
+				z-index 2
+			img.about-photo2
+				position absolute
+				top 90%
+				left 40px
+				z-index 2
+		.about-info
+			clearfix()
+			.subtitle
+				float left
+				width 50%
+				padding-left 180px
+				font-size 48px
+				font-weight 300
+				line-height 52px
+				color #fff			
+			.about-tabs
+				float left
+				width 50%
+				.tab
+					&.active
+						.tab-title
+							border-bottom 1px solid transparent
+							&:after
+								transform rotate(-180deg)
+						// .tab-content
+						// 	display block						
+					.tab-title
+						display inline-block
+						font-size 24px
+						color #fff
+						cursor pointer
+						margin-bottom 15px
+						text-transform uppercase
+						border-bottom 1px dotted #fff
+						transition 0.3s
+						&:hover
+							border-bottom 1px solid transparent
+						
+						&:after
+							display block
+							float right
+							content ''
+							width 12px
+							height 7px
+							margin 15px 0 0 15px
+							cursor pointer
+							background url("../images/tab-arrow.png") no-repeat
+					.tab-content
+						display none
+						p
+							margin 0 0 10px 0
+							color #99a8bf
+section.vacancies
+	background url("../images/vacancy-bg.png") repeat-x bottom #f0f8fb
+	.wrap
+		padding 95px 0 375px 0
+		h4
+			padding 0 140px
+			margin 0 0 40px 0
+		p
+			color #7e8890
+			margin 0
+			text-align center
+			padding 0 220px
+		.tabs-panel
+			margin 40px auto
+			text-align center
+			ul
+				padding 0
+				margin 0
+				li
+					list-style-type none
+					display inline-block
+					position relative
+					&:not(:last-child)
+						margin-right 40px
+						&:after
+							display block
+							content ''
+							width 3px
+							height 3px
+							background #f03557
+							position absolute
+							top 10px
+							right -23px
+					&.active
+						a
+							font-weight bold
+							color #243349
+							border-bottom 0
+				a
+					font-size 14px
+					color #3196dc
+					text-transform uppercase
+					border-bottom 1px dotted #3196dc
+					&:hover
+						border-bottom 0
+		.tabs-wrap
+			padding 0 25px
+			clearfix()
+			.vacancies-type
+				.vacancy-item
+					width 32%
+					float left
+					border-radius 3px
+					background #fff					
+					margin-bottom 2%
+					transition 0.5s
+					&:not(:nth-child(3n+3))
+						margin-right 2%
+					&:hover
+						background #f03557
+						transform scale(1.03)
+						.vacancy-title,
+						.vacancy-location
+							color #fdc232
+						.vacancy-preview
+							color #fff
+						.vacancy-location
+							background #f03557
+					a
+						padding 25px 20px
+						display block
+						position relative
+						height 30vh
+						overflow hidden
+						box-shadow 0 10px 20px rgba(0,0,0,.2)
+						.vacancy-title
+							transition 0.5s
+							font-size 18px
+							color #f03557
+							text-transform uppercase
+							margin-bottom 20px
+						.vacancy-preview
+							transition 0.5s
+							color #7e8890
+						.vacancy-location
+							color #959595
+							font-size 13px
+							text-transform uppercase
+							position absolute
+							left 20px
+							bottom 0
+							padding 5px 0 25px 0
+							width 100%
+							background #fff
+							z-index 1
+							transition 0.5s
+footer
+	background #243349
+	.wrap
+		padding 0 80px 60px
+		background url("../images/footer-x.png") no-repeat left / contain
+		.form-wrap
+			padding 0 110px
+			margin-bottom 60px
+			.footer-form
+				padding 70px
+				background #fff
+				box-shadow 0 20px 20px rgba(0,0,0,.2)
+				position relative
+				z-index 1
+				transform translateY(-70px)
+				h6
+					margin 0 0 45px 0
+			.form-field
+				clearfix()
+				&:first-child
+					margin-bottom 15px
+				&:nth-child(2)
+					margin-bottom 50px
+				&:last-child
+					text-align center
+					input[type="submit"]
+						display inline-block
+						border none
+						outline none
+						appearance none
+						cursor pointer
+						margin 0 auto
+						border-radius 3px
+						box-shadow 0 3px #b21d38
+						background #f03557
+						font-size 14px
+						color #fff
+						padding 11px 36px
+						transition 0.3s
+						font-weight bold
+						text-transform uppercase
+						&:hover
+							background #b71331
+				.form-item
+					width 45%
+					float left
+					&:first-child
+						margin-right 10%
+				input:not([type="submit"])
+					background #fff
+					width 100%
+					border none
+					outline none
+					border-bottom 1px solid #e4e4e4
+					line-height 40px
+					font-size 14px
+					color #7e8890
+		.footer-data
+			clearfix()
+			.mail
+				padding-top 5px
+				float left
+				a
+					padding-left 24px
+					color #99a8bf
+					text-decoration underline
+					position relative
+					&:before
+						display block
+						content ""
+						width 15px
+						height 11px
+						position absolute
+						top 7px
+						left 0
+						background url("../images/footer-icons.png") no-repeat 0px -36px
+					&:hover
+						text-decoration none
+			.copyr
+				float right
+				font-size 14px
+				color #525f74
+				padding-top 5px
+			.social
+				text-align center
+				a
+					width 39px
+					height 39px
+					display inline-block
+					background transparent
+					border solid 1px #354761
+					border-radius 3px
+					text-align center
+					position relative
+					transition 0.3s
+					&:hover
+						border 1px solid #fff
+					&:not(:last-child)
+						margin-right 20px
+					&:first-child
+						i
+							display block
+							width 9px
+							height 17px
+							position absolute
+							top 50%
+							left 50%
+							transform translate(-50%,-50%)
+							background url("../images/footer-icons.png") no-repeat 0px 0px
+					&:last-child
+						i
+							display block
+							width 16px
+							height 15px
+							position absolute
+							top 50%
+							left 50%
+							transform translate(-50%,-50%)
+							background url("../images/footer-icons.png") no-repeat 0px -20px
+article
+	background url("../images/vacancy-bg.png") repeat-x 65% bottom / 55%
+	.wrap
+		padding 140px 180px 25%
+		h1
+			margin 0 0 40px 0
+			text-align left
+			position relative
+			&:before
+				display block
+				content ''
+				width 34px
+				height 34px
+				position absolute
+				top 10px
+				left -50px
+				background url("../images/red-arrow.png") no-repeat
+		.subtitle
+			font-size 24px
+			color #243349
+			margin-bottom 15px
+		p,
+		li
+			color #747c83
+			font-size 16px
+			line-height 24px
+			margin 0 0 10px 0
+			
+		ul
+			padding 0
+			margin 0 0 15px 0
+			li
+				list-style-type none
+				padding-left 25px
+				position relative
+				&:before
+					display block
+					content ''
+					width 4px
+					height 4px
+					background #f03557
+					position absolute
+					top 10px
+					left 10px
+@media screen and (max-width: 1023px)
+	.wrap
+		width 708px
+	header
+		background url("../images/main-bg.png") no-repeat center bottom
+		.wrap
+			background none
+	header > .wrap h1
+		padding 0 40px 40px
+	header .top-line .wrap
+		padding 30px 0
+	section.about
+		overflow hidden
+		background: url(../images/red-x.png) no-repeat 0 center/cover, url(../images/blue-bg.png) no-repeat center/cover;
+	section.about .wrap .about-wrap img.about-photo1
+		right -100px
+	section.about .wrap .about-wrap img.about-photo2
+		left -100px
+	section.about .wrap .about-info .subtitle
+		padding-left 40px
+	section.tech .tech-wrap
+		text-align center
+	section.tech .tech-wrap .tech-item
+		float none
+		margin 1%
+		padding 10px
+		display inline-block
+		box-shadow 0px 3px 3px rgba(0,0,0,0.1)
+		border 1px solid #dbdbdb
+	section.tech .tech-wrap .tech-item img
+		max-width 60%
+	section.vacancies .wrap .tabs-wrap .vacancies-type .vacancy-item a
+		height 25vh
+	section.vacancies .wrap h4
+		padding 0
+	section.vacancies .wrap p
+		padding 0 40px
+	section.vacancies .wrap .tabs-wrap
+		padding 0
+	footer .wrap .form-wrap
+		padding 0
+		margin 0
+	article .wrap
+		padding 140px 25px 40%
+	article
+		background url('../images/vacancy-bg.png') no-repeat center bottom / contain
+@media screen and (max-width: 767px)
+	.wrap
+		width auto
+		padding 0 25px
+	header .top-line
+		position relative
+	header .top-line .wrap
+		padding 20px 0
+	header .top-line .wrap .logo
+		width 100%
+		text-align center
+	header .top-line .wrap .logo a,
+	header .top-line .wrap .logo span
+		display block
+		margin 0 auto
+		float none
+	header .top-line nav
+		width 100%
+		text-align center
+		margin-top 10px
+	header > .wrap
+		padding 0 0 20% 0
+	header
+		background url('../images/main-bg.png') no-repeat center bottom/contain
+	h1, h2, h3, h4, h5, h6
+		font-size 36px
+		line-height 40px
+	header > .wrap h1
+		padding 0 0 40px
+	header > .wrap .main-btns a:last-child
+		display none
+	header > .wrap .main-btns
+		padding-left 0
+		text-align center
+	header > .wrap .main-btns a:first-child
+		transform none
+	section.about .wrap .about-wrap
+		padding 0 25px
+		margin 0 auto 80px
+	section.about .wrap .about-wrap .about-container
+		padding 40px 30px
+	section.about .wrap .about-wrap img.about-photo2
+		left -140px
+	section.about .wrap .about-wrap img.about-photo1
+		right -140px
+	section.about .wrap .about-info
+		padding 0 25px
+	section.about .wrap .about-info .subtitle
+		padding-left 0
+		width 100%
+		margin-bottom 30px
+	section.about .wrap .about-info .about-tabs
+		width 100%
+	section.about .wrap .about-info .about-tabs .tab .tab-title
+		font-size 16px
+	section.about .wrap .about-info .about-tabs .tab .tab-title:after
+		margin 8px 0 0 15px
+	section.tech .wrap
+		padding 45px 0
+	section.tech .tech-wrap .tech-item
+		width 30%
+		padding 1%
+		overflow hidden
+	section.tech .tech-wrap .tech-item img
+		max-width 100%
+		max-height 90%
+	section.tech .wrap .more-tech
+		display block
+		text-align center
+		margin-top 15px
+		padding 0 25px
+		a
+			font-size 14px
+			color #3196dc
+			text-align center
+			text-transform uppercase
+			border-radius 3px
+			border 1px solid #e4e4e4
+			height 44px
+			line-height 44px
+			display block
+	section.vacancies
+		background url('../images/vacancy-bg.png') no-repeat bottom / contain #f0f8fb
+	section.vacancies .wrap
+		padding 40px 25px 40% 25px
+	section.vacancies .wrap p
+		padding 0
+	section.vacancies .wrap .tabs-panel ul li:not(:last-child):after
+		display none
+	section.vacancies .wrap .tabs-panel
+		margin 20px auto
+	section.vacancies .wrap .tabs-panel ul li
+		display block
+		width 100%
+		margin 10px 0
+	section.vacancies .wrap .tabs-wrap .vacancies-type .vacancy-item
+		width 100%
+		margin-bottom 20px
+	section.vacancies .wrap .tabs-wrap .vacancies-type .vacancy-item:not(:nth-child(3n+3))
+		margin-right 0
+	section.vacancies .wrap .tabs-wrap .vacancies-type .vacancy-item a
+		height 50vh
+	footer .wrap
+		padding 0 25px 60px
+	footer .wrap .form-wrap .footer-form
+		padding 45px 30px
+	footer .wrap .form-wrap .form-field .form-item
+		width 100%
+	footer .wrap .form-wrap .form-field .form-item:first-child
+		margin-bottom 15px
+		margin-right 0
+	footer .wrap .footer-data .mail
+		width 100%
+		text-align center
+		margin-bottom 20px
+	footer .wrap .footer-data .copyr
+		width 100%
+		text-align center
+		margin-bottom 20px
+	footer .wrap
+		padding 0 25px 20px
+	article .wrap
+		padding 40px 25px 40%
+	article .wrap h1
+		text-align center
+	article .wrap h1:before
+		display none
+	footer .wrap .form-wrap .footer-form
+		transform translateY(-30px)
+			
